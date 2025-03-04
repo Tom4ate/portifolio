@@ -20,13 +20,16 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    server: {
+      allowedHosts: ['*', '3000-tom4ate-portifolio-84re9bfn35b.ws-us118.gitpod.io']
+    },
     ssr: {
       noExternal: ['vuetify'],
     },
   },
 
   css: [],
-  modules: ['@nuxt/fonts', 'vuetify-nuxt-module'],
+  modules: ['@nuxt/fonts', 'vuetify-nuxt-module', 'nuxt-icons', '@nuxtjs/i18n'],
 
   vuetify: {
     vuetifyOptions: {
@@ -34,7 +37,8 @@ export default defineNuxtConfig({
         themes: {
           dark: {
             colors: {
-              primary: '#82e569',
+              // primary: '#82e569',
+              primary: '#00ff00',
             }
           }
         }
@@ -58,5 +62,19 @@ export default defineNuxtConfig({
         configFile: 'assets/settings.scss',
       },
     },
+  },
+
+  i18n: {
+    lazy: true,
+    langDir: 'lang',
+    defaultLocale: 'pt',
+    // fallbackLocale: 'pt',
+    strategy: 'no_prefix',
+    // TODO: Make server identify Translation
+    // experimental: {localeDetector: './server/localeDetector.ts'},
+    locales: ['en', 'pt'].map((lang) => ({
+      code: lang,
+      files: [`${lang}.json`],
+    })),
   },
 })
