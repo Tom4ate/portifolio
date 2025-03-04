@@ -38,6 +38,10 @@ const years = ref([
       </v-col>
       <v-col cols="12" md="6">
         <CmdCard>
+          <v-card max-height="250px">
+            <v-card-title> DEBUG </v-card-title>
+            <HomeObject></HomeObject>
+          </v-card>
           <v-progress-circular
             color="primary"
             class="ma-5"
@@ -54,7 +58,9 @@ const years = ref([
     <v-container>
       <v-row>
         <v-col cols="3">
-          <v-img src="/assets/image/lucas-1-nobg.webp" :max-width="325"></v-img>
+          <v-card class="mt-2">
+            <v-img src="/assets/image/lucas-1-nobg.webp" :max-width="325"></v-img>
+          </v-card>
         </v-col>
         <v-col cols="9">
           <v-card-title class="text-primary">{{ $t('aboutDescription') }}</v-card-title>
@@ -95,6 +101,8 @@ const years = ref([
       </v-timeline-item>
     </v-timeline>
   </v-container>
+
+  <
 </template>
 
 

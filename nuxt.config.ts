@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   vite: {
     server: {
-      allowedHosts: ['*', '3000-tom4ate-portifolio-84re9bfn35b.ws-us118.gitpod.io']
+      // allowedHosts: ['*', '3000-tom4ate-portifolio-84re9bfn35b.ws-us118.gitpod.io']
     },
     ssr: {
       noExternal: ['vuetify'],
@@ -29,7 +29,13 @@ export default defineNuxtConfig({
   },
 
   css: [],
-  modules: ['@nuxt/fonts', 'vuetify-nuxt-module', 'nuxt-icons', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/fonts', // fonts
+    'vuetify-nuxt-module',  // vuetify is a ui framework
+    'nuxt-icons', // this is to load svg icons 
+    '@nuxtjs/i18n', // translations
+    '@tresjs/nuxt' // 3D 
+  ],
 
   vuetify: {
     vuetifyOptions: {

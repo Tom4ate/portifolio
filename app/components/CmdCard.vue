@@ -4,7 +4,7 @@ const buttons = ref([{ text: '—' },{ text: '▢' }, { text: 'X', red: true }])
 const props = defineProps({
     title: {
         type: String,
-        defult: 'C:/System32/xxx.exe'
+        default: 'C:/System32/T4.exe'
     }
 })
 </script>
