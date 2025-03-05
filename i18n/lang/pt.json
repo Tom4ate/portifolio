@@ -4,5 +4,10 @@
         "about": "Sobre",
         "projects": "Projetos",
         "contact": "Contato"
-    }
+    },
+    "aboutDescription": "Sobre mim",
+    "send": "Enviar",
+    "getInTouch": "Entre em Contato",
+    "name": "Nome",
+    "yourMessage": "Sua Mensagem"
 }
