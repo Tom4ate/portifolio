@@ -38,11 +38,12 @@ const years = ref([
       </v-col>
       <v-col cols="12" md="6">
         <CmdCard>
-          <v-card max-height="250px">
-            <v-card-title> DEBUG </v-card-title>
+          <v-card min-height="250px">
+            <!-- <v-card-title> DEBUG </v-card-title> -->
             <HomeObject></HomeObject>
           </v-card>
           <v-progress-circular
+            v-if="false"
             color="primary"
             class="ma-5"
             indeterminate

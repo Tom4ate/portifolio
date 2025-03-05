@@ -12,7 +12,7 @@ const gl = {
   shadowMapType: BasicShadowMap,
   outputColorSpace: SRGBColorSpace,
   toneMapping: NoToneMapping,
-  windowSize: true,
+  windowSize: false,
 }
 </script>
 <template>
